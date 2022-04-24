@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  service1:
+    image: mustafa150/myapp1
+    ports:
+      - 8080:8080
+    container_name: app1
+  service2:
+    image: mustafa150/myapp2
+    ports:
+      - 8081:8080
+    container_name: app2
+  service3:
+    image: mustafa150/myreverseproxy
+    ports:
+      - 80:80
+    container_name: reverseproxy
